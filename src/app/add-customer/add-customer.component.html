@@ -1,0 +1,28 @@
+<h2>Create Customer</h2>
+<div>
+    <form [formGroup]="formTest"  (ngSubmit)="onsubmit()">
+
+        <div class="group-of-forms">
+            <label for='name'>Yours name:</label>
+            <input type='text' formControlName="name" class='control-form' placeholder="Input yours name" id="name" required  name="name">
+        </div>
+
+        <div class="group-of-forms">
+            <label for='lastname'>Last name:</label>
+            <input type='text' formControlName="lastname" class='control-form' placeholder="Input yours lastname" id="lastname" required  name="lastname">
+        </div>
+
+        <div class="group-of-forms">
+            <label for='address'>Yours address:</label>
+            <input type='text' formControlName="address" class='control-form' placeholder="Input yours address" id="address" required name="address">
+        </div>
+
+        <div class="group-of-forms">
+            <label for='age'>Yours age:</label>
+            <input type='text' formControlName="age" class='control-form' placeholder="Input yours age" id="age" required  name="age">
+        </div>
+
+        <button type="submit" class="btn btn-success">Confirm</button>
+    </form>
+</div>
+<app-message></app-message>
